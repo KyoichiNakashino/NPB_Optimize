@@ -137,10 +137,17 @@ savefig([filename, '_V.fig']);
 
 figure
 plot(alphas, hs);
+xlabel ('\alpha');
+ylabel ('Hight [km]');
+grid on
 savefig([filename, '_H.fig']);
+
 
 figure
 plot(alphas, Ns);
+xlabel ('\alpha');
+ylabel ('Axial force [N]');
+grid on
 savefig([filename, '_N.fig']);
 
 figure
