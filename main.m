@@ -129,7 +129,10 @@ for i = 1:numel(alphas)
 end
 
 figure
-plot(alphas, Vs, '-o');
+plot(alphas, Vs);
+xlabel ('\alpha');
+ylabel ('Volume [m^3]');
+grid on
 savefig([filename, '_V.fig']);
 
 figure
